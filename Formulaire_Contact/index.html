@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire - Contact us</title>
+</head>
+<body>
+    <h1>Formulaire</h1>
+
+    <h2>Contactez nous</h2>
+
+    <form action="">
+
+        <p> Sexe :
+            <input type="radio" name="sexe"> Femme
+            <input type="radio" name="sexe"> Homme
+        </p>
+
+        <p>
+            <label for="nom">Nom: <input type="text" id="nom"></label>
+            <label for="prenom">Prenom: <input type="text" id="prenom"></label>
+        </p>
+
+        <p>
+            <label for="pseudo">Pseudo: <input type="text" id="pseudo"></label>
+        </p>
+
+        <p>
+            <label for="age">Age: <input type="number" id="age" min="0"></label>
+        </p>
+
+        <p>
+            <label for="password">Mot de passe: <input type="text" id="password" minlength="8"></label>
+        </p>
+
+        <p>
+            <label for="comment">Commentaire: </label>
+            <br>
+            <textarea type="text" id="comment" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <label for="pays">Pays: </label>
+            <select name="" id="pays" size="2">
+                <option value="">France</option>
+                <option value="">Espagne</option>
+            </select>
+          
+        </p>
+
+        <p>
+            <label for="pays">Souhaitez vous etre contacte par email: </label>
+            <input type="radio" name="emel"> Oui 
+            <input type="radio" name="emel"> Non
+            <br>
+            <label for="email">Si oui, Email: <input type="email" id="email"></label>
+        </p>
+
+        <button type="submit">Validez</button>
+    </form>
+</body>
+</html>
